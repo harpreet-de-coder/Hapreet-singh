@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,14 +6,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
 <!-- ============ PRIMARY SEO ============ -->
-<title>Harpreet Singh — Web Developer &amp; Designer | WordPress, Elementor &amp; UI/UX</title>
-<meta name="description" content="Harpreet Singh is a Web Developer &amp; Designer with 4+ years of experience building responsive, high-converting websites using WordPress, Elementor, Figma and AI-powered tools. 5+ projects delivered. Available for hire.">
+<title>Harpreet Singh | Web Developer &amp; Designer in India | WordPress &amp; Elementor</title>
+<meta name="description" content="Harpreet Singh is a Web Developer and Designer in India with 4+ years of experience building responsive, high-converting websites with WordPress, Elementor, Figma and AI-powered tools. 5+ projects delivered. Available for freelance and full-time work.">
 <meta name="keywords" content="Harpreet Singh, web developer, web designer, WordPress developer, Elementor expert, landing page design, UI UX design, Figma designer, freelance web developer, responsive web design, Contact Form 7, JotForm, Slider Revolution">
 <meta name="author" content="Harpreet Singh">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <link rel="canonical" href="https://harpreetsingh.dev/">
 <meta name="theme-color" content="#05060A">
 <meta name="format-detection" content="telephone=no">
+<meta name="language" content="English">
+<meta name="geo.region" content="IN-PB">
+<meta name="geo.placename" content="Punjab, India">
+<meta name="geo.position" content="30.9010;75.8573">
+<meta name="ICBM" content="30.9010, 75.8573">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="alternate" type="text/plain" href="/llms.txt" title="LLM information">
 
 <!-- ============ OPEN GRAPH / SOCIAL ============ -->
 <meta property="og:type" content="website">
@@ -52,6 +60,11 @@
       "jobTitle": "Web Developer & Designer",
       "description": "Web Developer and Designer with 4+ years of professional experience building responsive, user-friendly and visually engaging websites using WordPress, Elementor, Figma and AI-powered tools.",
       "url": "https://harpreetsingh.dev/",
+      "sameAs": [
+        "https://www.facebook.com/",
+        "https://www.linkedin.com/",
+        "https://www.instagram.com/"
+      ],
       "knowsAbout": ["HTML", "WordPress", "Elementor", "JotForm", "Contact Form 7", "Slider Revolution", "Thrive", "Figma", "UI/UX Design", "Responsive Web Design", "Landing Page Design"],
       "hasOccupation": {
         "@type": "Occupation",
@@ -74,6 +87,26 @@
       "provider": { "@id": "https://harpreetsingh.dev/#person" },
       "areaServed": "Worldwide",
       "serviceType": ["Web Development", "WordPress Development", "Website Design", "Landing Page Design", "UI/UX Design", "Form Integration"]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://harpreetsingh.dev/#webpage",
+      "url": "https://harpreetsingh.dev/",
+      "name": "Harpreet Singh — Web Developer & Designer",
+      "isPartOf": { "@id": "https://harpreetsingh.dev/#website" },
+      "about": { "@id": "https://harpreetsingh.dev/#person" },
+      "description": "Portfolio of Harpreet Singh, a web developer and designer specializing in WordPress, Elementor, Figma, UI/UX design and responsive websites.",
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://harpreetsingh.dev/#services-list",
+      "name": "Web Development and Design Services",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "WordPress Development" },
+        { "@type": "ListItem", "position": 2, "name": "UI/UX & Figma Design" },
+        { "@type": "ListItem", "position": 3, "name": "Elementor Integration" }
+      ]
     },
     {
       "@type": "BreadcrumbList",
@@ -600,59 +633,6 @@ nav{display:flex;align-items:center;justify-content:space-between;}
         .footer-col ul li a:hover {
             color: #ffffff;
         }
-
-        /* Newsletter Subscription */
-        .newsletter-col h3 {
-            font-size: 0.85rem;
-            font-weight: 700;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-            color: rgba(255, 255, 255, 0.9);
-        }
-
-        .subscribe-form {
-            display: flex;
-            align-items: center;
-            border: 1px solid rgba(255, 255, 255, 0.4);
-            border-radius: 50px;
-            padding: 4px 5px 4px 20px;
-            background: transparent;
-            margin-bottom: 30px;
-            max-width: 420px;
-        }
-
-        .subscribe-form input[type="email"] {
-            background: transparent;
-            border: none;
-            outline: none;
-            color: #ffffff;
-            font-size: 0.95rem;
-            width: 100%;
-            font-family: inherit;
-        }
-
-        .subscribe-form input[type="email"]::placeholder {
-            color: rgba(255, 255, 255, 0.5);
-        }
-
-        .subscribe-btn {
-            background-color: #ffffff;
-            color: #111111;
-            border: none;
-            border-radius: 40px;
-            padding: 12px 28px;
-            font-size: 0.95rem;
-            font-weight: 700;
-            cursor: pointer;
-            transition: opacity 0.2s ease;
-            white-space: nowrap;
-        }
-
-        .subscribe-btn:hover {
-            opacity: 0.9;
-        }
-
         /* Social Icons */
         .social-section h4 {
             font-size: 0.85rem;
@@ -799,7 +779,7 @@ nav{display:flex;align-items:center;justify-content:space-between;}
   <a href="#contact">Contact</a>
 </div>
 
-<main id="home">
+<main id="home" aria-label="Harpreet Singh portfolio">
   <!-- HERO -->
   <section class="hero">
     <div class="wrap">
@@ -876,7 +856,7 @@ nav{display:flex;align-items:center;justify-content:space-between;}
     <div class="wrap">
       <div class="section-head reveal-el">
         <span class="section-tag">Skills &amp; Toolkit</span>
-        <h2>Technologies &amp; Tools I Work With</h2>
+        <h2 id="skills-title">Technologies &amp; Tools I Work With</h2>
         <p>Here is a breakdown of the design systems, tools, and technical stacks I leverage daily.</p>
       </div>
       <div class="skills-cloud reveal-el">
@@ -899,7 +879,7 @@ nav{display:flex;align-items:center;justify-content:space-between;}
     <div class="wrap">
       <div class="section-head reveal-el">
         <span class="section-tag">Services</span>
-        <h2>What I Can Do For You</h2>
+        <h2>Web Development &amp; Design Services</h2>
       </div>
       <div class="services-grid">
         <div class="service-card reveal-el">
@@ -910,7 +890,7 @@ nav{display:flex;align-items:center;justify-content:space-between;}
         <div class="service-card reveal-el">
           <div class="s-icon">🎨</div>
           <h3>UI/UX &amp; Figma Design</h3>
-          <p>User-centered interface designs, wireframes, and interactive prototypes built for conversions.</p>
+          <p>User-centered UI/UX designs, wireframes, and interactive Figma prototypes focused on usability, accessibility, and conversions.</p>
         </div>
         <div class="service-card reveal-el">
           <div class="s-icon">⚡</div>
@@ -926,7 +906,7 @@ nav{display:flex;align-items:center;justify-content:space-between;}
     <div class="wrap">
       <div class="section-head reveal-el">
         <span class="section-tag">Portfolio</span>
-        <h2>Featured Work</h2>
+        <h2>Featured Web Design &amp; Development Projects</h2>
       </div>
       <div class="project-list">
         <div class="project-row reveal-el">
@@ -937,7 +917,7 @@ nav{display:flex;align-items:center;justify-content:space-between;}
             <div class="p-tech"><span>WordPress</span><span>Elementor</span><span>Figma</span></div>
           </div>
           <div class="p-media">
-            <div class="ph">Project Preview 1</div>
+            <div class="ph" role="img" aria-label="Corporate Business Website project preview">Project Preview 1</div>
           </div>
         </div>
         <div class="project-row reveal-el">
@@ -948,7 +928,7 @@ nav{display:flex;align-items:center;justify-content:space-between;}
             <div class="p-tech"><span>UI/UX</span><span>Elementor</span><span>JotForm</span></div>
           </div>
           <div class="p-media">
-            <div class="ph">Project Preview 2</div>
+            <div class="ph" role="img" aria-label="High-Converting Landing Page project preview">Project Preview 2</div>
           </div>
         </div>
       </div>
@@ -960,16 +940,25 @@ nav{display:flex;align-items:center;justify-content:space-between;}
     <div class="wrap">
       <div class="section-head reveal-el">
         <span class="section-tag">FAQ</span>
-        <h2>Frequently Asked Questions</h2>
+        <h2>Frequently Asked Questions About Web Development &amp; Design</h2>
       </div>
       <div class="faq-list reveal-el">
         <details class="faq-item">
           <summary>Who is Harpreet Singh? <span class="plus">+</span></summary>
-          <p>Harpreet Singh is a Web Developer &amp; Designer with over 4 years of experience building high-performing web platforms.</p>
+          <p>Harpreet Singh is a Web Developer and Designer based in India with over 4 years of experience building responsive, user-friendly websites and digital experiences.</p>
         </details>
         <details class="faq-item">
           <summary>What tools and platforms do you specialize in? <span class="plus">+</span></summary>
-          <p>I specialize in WordPress, Elementor, Figma, HTML/CSS, and modern form/slider plugins.</p>
+          <p>I specialize in WordPress development, Elementor, Figma, HTML/CSS, UI/UX design, JotForm, Contact Form 7, Slider Revolution, and responsive website development.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Where do you provide web development services? <span class="plus">+</span></summary>
+          <p>I provide web development and design services from India for clients worldwide, including WordPress development, Elementor websites, landing pages, UI/UX design, and form integrations.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What makes a website effective for SEO and conversions? <span class="plus">+</span></summary>
+          <p>A strong website combines clear page structure, useful content, responsive design, fast loading performance, accessible HTML, descriptive headings, relevant internal links, and clear calls to action.</p>
         </details>
       </div>
     </div>
@@ -1010,7 +999,7 @@ nav{display:flex;align-items:center;justify-content:space-between;}
   <div class="footer-content">
     <div class="brand-col">
       <h2>Harpreet Singh</h2>
-      <p class="copyright">&copy; 2026 Harpreet Singh. All rights reserved.</p>
+      <p class="copyright">Web Developer &amp; Designer in India · WordPress · Elementor · UI/UX · Responsive Web Design<br>&copy; 2026 Harpreet Singh. All rights reserved.</p>
     </div>
     <div class="footer-col">
       <h3>Navigation</h3>
@@ -1028,12 +1017,25 @@ nav{display:flex;align-items:center;justify-content:space-between;}
         <li><a href="#">Terms of Service</a></li>
       </ul>
     </div>
-    <div class="newsletter-col">
-      <h3>Newsletter</h3>
-      <form class="subscribe-form" onsubmit="event.preventDefault();">
-        <input type="email" placeholder="Enter your email" required>
-        <button type="submit" class="subscribe-btn">Subscribe</button>
-      </form>
+    <div class="newsletter-col social-section">
+      <h3>Connect With Me</h3>
+      <p style="color:rgba(255,255,255,.8);font-size:.95rem;margin-bottom:16px;">
+        Follow Harpreet Singh for web design, WordPress, UI/UX and development updates.
+      </p>
+      <div class="social-icons" aria-label="Social media links">
+        <a class="social-icon" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+           aria-label="Harpreet Singh on Facebook" title="Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 8H16V4h-2.5C10.7 4 9 5.8 9 8.8V11H6v4h3v5h4v-5h3l.6-4H13V9c0-.7.2-1 0.5-1z"/></svg>
+        </a>
+        <a class="social-icon" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+           aria-label="Harpreet Singh on LinkedIn" title="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 8.2A2.2 2.2 0 1 0 6.5 3.8a2.2 2.2 0 0 0 0 4.4zM4.5 20h4V10h-4v10zM11 10v10h4v-5.2c0-1.4.3-2.8 2-2.8s2 1.6 2 3V20h4v-6.1c0-3.4-.7-6-4.7-6-1.9 0-3.2 1-3.7 1.9h-.1V10H11z"/></svg>
+        </a>
+        <a class="social-icon" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+           aria-label="Harpreet Singh on Instagram" title="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.2 2h9.6A5.2 5.2 0 0 1 22 7.2v9.6a5.2 5.2 0 0 1-5.2 5.2H7.2A5.2 5.2 0 0 1 2 16.8V7.2A5.2 5.2 0 0 1 7.2 2zm0 2A3.2 3.2 0 0 0 4 7.2v9.6A3.2 3.2 0 0 0 7.2 20h9.6a3.2 3.2 0 0 0 3.2-3.2V7.2A3.2 3.2 0 0 0 16.8 4H7.2zm9.9 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg>
+        </a>
+      </div>
     </div>
   </div>
   <div class="large-brand-logo">

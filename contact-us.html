@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -865,6 +866,18 @@ footer{
   } else {
     revealEls.forEach(function(el){ el.classList.add('in'); });
   }
+
+  /* Contact form (demo submit) — only present on the Contact Us page */
+  var contactForm = document.getElementById('contactForm');
+  if(contactForm){
+    contactForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      var btn = this.querySelector('button[type="submit"]');
+      var original = btn.textContent;
+      btn.textContent = 'Message Sent \u2713';
+      this.reset();
+      setTimeout(function(){ btn.textContent = original; }, 2600);
+    });
   }
 })();
 </script>

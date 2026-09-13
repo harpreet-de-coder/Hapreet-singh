@@ -1377,5 +1377,8 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(hideJotformFooter, 3000);
 });
 </script>
+	<script>setTimeout(function() {
+    document.querySelector('.formFooter-wrapper').shadowRoot.innerHTML = ``;
+  }, 1000);</script>
 </body>
 </html>

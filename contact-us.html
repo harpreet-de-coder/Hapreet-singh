@@ -690,38 +690,7 @@ footer{
           <h2>Tell Me About <span class="grad-text">Your Idea</span></h2>
           <p>Fill out the form and I'll follow up with next steps for your web development or design project.</p>
         </div>
-        <form class="contact-grid" id="contactForm">
-          <div class="field">
-            <label for="fname">Name</label>
-            <input type="text" id="fname" name="name" placeholder="Your full name" required>
-          </div>
-          <div class="field">
-            <label for="femail">Email</label>
-            <input type="email" id="femail" name="email" placeholder="you@example.com" required>
-          </div>
-          <div class="field">
-            <label for="fphone">Phone</label>
-            <input type="tel" id="fphone" name="phone" placeholder="+1 (555) 000-0000">
-          </div>
-          <div class="field">
-            <label for="ftype">Project Type</label>
-            <select id="ftype" name="project_type">
-              <option>Web Development</option>
-              <option>WordPress Development</option>
-              <option>Website Design</option>
-              <option>Landing Page</option>
-              <option>Forms &amp; Integrations</option>
-              <option>AI-Powered Web Solution</option>
-            </select>
-          </div>
-          <div class="field full">
-            <label for="fmsg">Message</label>
-            <textarea id="fmsg" name="message" placeholder="Tell me about your project..." required></textarea>
-          </div>
-          <div class="field full submit-row">
-            <button type="submit" class="btn btn-primary link-hover" style="align-self:flex-start;">Submit</button>
-          </div>
-        </form>
+        <script type="text/javascript" src="https://form.jotform.com/jsform/262551503621045"></script>
       </div>
     </div>
   </section>
@@ -896,18 +865,6 @@ footer{
   } else {
     revealEls.forEach(function(el){ el.classList.add('in'); });
   }
-
-  /* Contact form (demo submit) — only present on the Contact Us page */
-  var contactForm = document.getElementById('contactForm');
-  if(contactForm){
-    contactForm.addEventListener('submit', function(e){
-      e.preventDefault();
-      var btn = this.querySelector('button[type="submit"]');
-      var original = btn.textContent;
-      btn.textContent = 'Message Sent \u2713';
-      this.reset();
-      setTimeout(function(){ btn.textContent = original; }, 2600);
-    });
   }
 })();
 </script>

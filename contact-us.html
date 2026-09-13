@@ -716,6 +716,7 @@ footer{
 	JotForm.newPaymentUI = true;
 	JotForm.originalLanguage = "en";
 	JotForm.isFormViewTrackingAllowed = true;
+	JotForm.highlightInputs = false;
 	JotForm.replaceTagTest = true;
 	JotForm.activeRedirect = "thanktext";
 	JotForm.uploadServerURL = "https://upload.jotform.com/upload";
@@ -1126,10 +1127,14 @@ li[data-type=control_fileupload] .qq-upload-button {
     padding-top: 5px;
     padding-bottom: 0px;
 }
+.jfDropdownV2-header {
+    background: transparent;
+    background-image: none !important;
+}
     /* Injected CSS Code */
 </style>
 
-<form class="jotform-form" onsubmit="return typeof testSubmitFunction !== 'undefined' && testSubmitFunction();" action="https://submit.jotform.com/submit/262551503621045" method="post" name="form_262551503621045" id="262551503621045" accept-charset="utf-8" autocomplete="on"><input type="hidden" name="formID" value="262551503621045" /><input type="hidden" id="JWTContainer" value="" /><input type="hidden" id="cardinalOrderNumber" value="" /><input type="hidden" id="jsExecutionTracker" name="jsExecutionTracker" value="build-date-1789286767383" /><input type="hidden" id="submitSource" name="submitSource" value="unknown" /><input type="hidden" id="submitDate" name="submitDate" value="undefined" /><input type="hidden" id="buildDate" name="buildDate" value="1789286767383" /><input type="hidden" name="uploadServerUrl" value="https://upload.jotform.com/upload" /><input type="hidden" name="eventObserver" value="1" />
+<form class="jotform-form" onsubmit="return typeof testSubmitFunction !== 'undefined' && testSubmitFunction();" action="https://submit.jotform.com/submit/262551503621045" method="post" name="form_262551503621045" id="262551503621045" accept-charset="utf-8" autocomplete="on"><input type="hidden" name="formID" value="262551503621045" /><input type="hidden" id="JWTContainer" value="" /><input type="hidden" id="cardinalOrderNumber" value="" /><input type="hidden" id="jsExecutionTracker" name="jsExecutionTracker" value="build-date-1789287414696" /><input type="hidden" id="submitSource" name="submitSource" value="unknown" /><input type="hidden" id="submitDate" name="submitDate" value="undefined" /><input type="hidden" id="buildDate" name="buildDate" value="1789287414696" /><input type="hidden" name="uploadServerUrl" value="https://upload.jotform.com/upload" /><input type="hidden" name="eventObserver" value="1" />
   <div role="main" class="form-all">
     <ul class="form-section page-section" role="presentation">
       <li class="form-line form-line-column form-col-1" data-type="control_textbox" id="id_4"><label class="form-label form-label-top" id="label_4" for="input_4"> Name </label>
@@ -1139,7 +1144,7 @@ li[data-type=control_fileupload] .qq-upload-button {
         <div id="cid_5" class="form-input-wide" data-layout="half"> <span class="form-sub-label-container" style="vertical-align:top"><input type="email" id="input_5" name="q5_email" class="form-textbox validate[Email]" data-defaultvalue="" autoComplete="section-input_5 email" style="width:310px" size="310" data-component="email" aria-labelledby="label_5 sublabel_input_5" value="" /><label class="form-sub-label" for="input_5" id="sublabel_input_5" style="min-height:13px">example@example.com</label></span> </div>
       </li>
       <li class="form-line form-line-column form-col-3" data-type="control_phone" id="id_6"><label class="form-label form-label-top" id="label_6" for="input_6_full"> Phone Number </label>
-        <div id="cid_6" class="form-input-wide" data-layout="half"> <span class="form-sub-label-container" style="vertical-align:top"><input type="tel" id="input_6_full" name="q6_phoneNumber[full]" data-type="mask-number" class="mask-phone-number form-textbox validate[Fill Mask]" data-defaultvalue="" autoComplete="section-input_6 tel-national" style="width:310px" data-masked="true" placeholder="(000) 000-0000" data-component="phone" aria-label="Phone Number" aria-labelledby="label_6 sublabel_6_masked input_6_full_label" value="" /><label class="form-sub-label" for="input_6_full" id="sublabel_6_masked" style="min-height:13px">Please enter a valid phone number.</label></span><span id="input_6_full_label" style="border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;white-space:nowrap">Format: (000) 000-0000.</span> </div>
+        <div id="cid_6" class="form-input-wide" data-layout="half"> <span class="form-sub-label-container" style="vertical-align:top"><input type="tel" id="input_6_full" name="q6_phoneNumber[full]" data-type="mask-number" class="mask-phone-number form-textbox validate[Fill Mask]" data-defaultvalue="" autoComplete="section-input_6 tel-national" style="width:310px" data-masked="true" placeholder="(000) 000-0000" data-component="phone" aria-label="Phone Number" aria-labelledby="label_6 input_6_full_label" value="" /></span><span id="input_6_full_label" style="border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;white-space:nowrap">Format: (000) 000-0000.</span> </div>
       </li>
       <li class="form-line form-line-column form-col-4" data-type="control_dropdown" id="id_7"><label class="form-label form-label-top" id="label_7" for="input_7"> Project Type </label>
         <div id="cid_7" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="input_7" name="q7_typeA7" style="width:310px" data-ui-version="v2" data-visible-options="10" data-search-visibility="Auto" data-component="dropdown" aria-label="Project Type">
@@ -1153,7 +1158,7 @@ li[data-type=control_fileupload] .qq-upload-button {
           </select> </div>
       </li>
       <li class="form-line" data-type="control_textarea" id="id_8"><label class="form-label form-label-top form-label-auto" id="label_8" for="input_8"> Message </label>
-        <div id="cid_8" class="form-input-wide" data-layout="full"> <textarea id="input_8" class="form-textarea" name="q8_typeA8" style="width:648px;height:163px" data-component="textarea" aria-labelledby="label_8"></textarea> </div>
+        <div id="cid_8" class="form-input-wide" data-layout="full"> <textarea id="input_8" class="form-textarea" name="q8_typeA8" style="width:648px;height:120px" data-component="textarea" aria-labelledby="label_8"></textarea> </div>
       </li>
       <li class="form-line" data-type="control_button" id="id_2">
         <div id="cid_2" class="form-input-wide" data-layout="full">

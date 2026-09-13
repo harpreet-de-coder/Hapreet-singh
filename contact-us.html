@@ -691,7 +691,7 @@ footer{
           <h2>Tell Me About <span class="grad-text">Your Idea</span></h2>
           <p>Fill out the form and I'll follow up with next steps for your web development or design project.</p>
         </div>
-        <script>window.enableEventObserver=true</script>
+       <script>window.enableEventObserver=true</script>
 <script>window.enableDateFieldSelectInputs=false</script>
 <script>window.CDN="https://cdn.jotfor.ms/"</script>
 <script>window.umdRootPath="https://cdn.jotfor.ms/s/umd/637e10956ee/"</script>
@@ -734,7 +734,7 @@ if (window.JotForm && JotForm.accessible) $('input_8').setAttribute('tabindex',0
 	});
 
    setTimeout(function() {
-JotForm.paymentExtrasOnTheFly([null,null,{"name":"submit2","qid":"2","text":"Submit","type":"control_button"},null,{"description":"","name":"typeA","qid":"4","subLabel":"","text":"Name","type":"control_textbox"},{"description":"","name":"email","qid":"5","subLabel":"example@example.com","text":"Email","type":"control_email"},{"description":"","name":"phoneNumber","qid":"6","text":"Phone Number","type":"control_phone"},{"description":"","name":"typeA7","qid":"7","subLabel":"","text":"Project Type","type":"control_dropdown"},{"description":"","mde":"No","name":"typeA8","qid":"8","subLabel":"","text":"Message","type":"control_textarea","wysiwyg":"Disable"}]);}, 20); 
+JotForm.paymentExtrasOnTheFly([null,null,{"name":"submit2","qid":"2","text":"Submit","type":"control_button"},null,{"description":"","name":"typeA","qid":"4","subLabel":"","text":"Name","type":"control_textbox"},{"description":"","name":"email","qid":"5","subLabel":"","text":"Email","type":"control_email"},{"description":"","name":"phoneNumber","qid":"6","text":"Phone Number","type":"control_phone"},{"description":"","name":"typeA7","qid":"7","subLabel":"","text":"Project Type","type":"control_dropdown"},{"description":"","mde":"No","name":"typeA8","qid":"8","subLabel":"","text":"Message","type":"control_textarea","wysiwyg":"Disable"}]);}, 20); 
 </script>
 <link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/stylebuilder/static/form-common.css?v=9c15332
 "/>
@@ -791,11 +791,11 @@ JotForm.paymentExtrasOnTheFly([null,null,{"name":"submit2","qid":"2","text":"Sub
 .form-checkbox-other-input,
 .form-captcha input,
 .form-spinner input {
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0);
 }
 .form-line {
-  margin-top: 12px;
-  margin-bottom: 12px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .supernova .form-all,
 .form-all {
@@ -832,12 +832,39 @@ JotForm.paymentExtrasOnTheFly([null,null,{"name":"submit2","qid":"2","text":"Sub
       color: #a2abc1;
     }
   /*PREFERENCES STYLE*/
+/* 17 - INPUT WIDTHS */
+/*  20 - FORM PADDING */
+@media screen and (min-width: 768px) {
+  ul.form-section {
+    padding: 0px 38px;
+  }
+}
+.form-textbox:not(#productSearch-input),
+.form-textarea,
+li[data-type=control_fileupload] .qq-upload-button,
+.signature-wrapper {
+  color: #FFFFFF;
+}
+.form-dropdown:first-child {
+  color: #FFFFFF;
+}
+.form-dropdown {
+  margin: 0;
+  border-width: 1px;
+}
 .form-header-group .form-header,
 .form-header-group .form-subHeader {
   color: #8891A7;
 }
 li[data-type=control_fileupload] .qq-upload-button {
-  background-color: rgba(255, 255, 255, 0.15);
+  color: #FFFFFF;
+}
+li[data-type=control_fileupload] .jfUpload-heading  {
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+li[data-type=control_fileupload] .qq-upload-button {
+  background-color: rgba(255, 255, 255, 0);
 }
 .supernova {
   background-color: rgba(243, 243, 254, 0);
@@ -852,7 +879,7 @@ li[data-type=control_fileupload] .qq-upload-button {
 .form-checkbox-other-input,
 .form-captcha input,
 .form-spinner input {
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0);
 }
 
 /*FORM LAYOUT PRESETS*/
@@ -1105,43 +1132,54 @@ li[data-type=control_fileupload] .qq-upload-button {
 }
 /*FORM LAYOUT PRESETS*/
 
-/*__INSPECT_SEPERATOR__*/.formFooter-button, .submit-button{    gap: 8px;
-    padding: 13px 26px;
-    border-radius: 100px;
-    font-size: 14px;
-    font-weight: 500;
-  background: linear-gradient(100deg, #3e7bfa, #8b5cf6);
-  color: #fff;
-    box-shadow: 0 0 0 rgba(139, 92, 246, 0);
+
+/*__INSPECT_SEPERATOR__*/
+
+.formFooter-button, .submit-button {
+  border:0px;
+    gap : 8px;
+    padding : 13px 26px;
+    border-radius : 100px;
+    font-size : 14px;
+    font-weight : 500;
+    background : linear-gradient(100deg, #3e7bfa, #8b5cf6);
+    color : #fff;
+    box-shadow : 0 0 0 rgba(139, 92, 246, 0);
 }
 .form-all {
-    box-shadow: none !important;
+    box-shadow : none !important;
+    margin : 0 auto;
 }
 .page-section {
-    margin: 0;
-    padding: 0 0px;
-    list-style: none;
+    margin : 0;
+    padding : 0 0px;
+    list-style : none;
 }
 .form-buttons-wrapper.form-buttons-left.jsTest-button-wrapperField {
-    border-top: 0px !important;
-    padding-top: 5px;
-    padding-bottom: 0px;
+    border-top : 0px !important;
+    padding-top : 5px;
+    padding-bottom : 0px;
 }
 .jfDropdownV2-header {
-    background: transparent;
-    background-image: none !important;
+    background : transparent;
+    background-image : none !important;
 }
+.jfDropdownV2-selectedText {
+    color: #ffffff;
+}
+
+
     /* Injected CSS Code */
 </style>
 
-<form class="jotform-form" onsubmit="return typeof testSubmitFunction !== 'undefined' && testSubmitFunction();" action="https://submit.jotform.com/submit/262551503621045" method="post" name="form_262551503621045" id="262551503621045" accept-charset="utf-8" autocomplete="on"><input type="hidden" name="formID" value="262551503621045" /><input type="hidden" id="JWTContainer" value="" /><input type="hidden" id="cardinalOrderNumber" value="" /><input type="hidden" id="jsExecutionTracker" name="jsExecutionTracker" value="build-date-1789287414696" /><input type="hidden" id="submitSource" name="submitSource" value="unknown" /><input type="hidden" id="submitDate" name="submitDate" value="undefined" /><input type="hidden" id="buildDate" name="buildDate" value="1789287414696" /><input type="hidden" name="uploadServerUrl" value="https://upload.jotform.com/upload" /><input type="hidden" name="eventObserver" value="1" />
+<form class="jotform-form" onsubmit="return typeof testSubmitFunction !== 'undefined' && testSubmitFunction();" action="https://submit.jotform.com/submit/262551503621045" method="post" name="form_262551503621045" id="262551503621045" accept-charset="utf-8" autocomplete="on"><input type="hidden" name="formID" value="262551503621045" /><input type="hidden" id="JWTContainer" value="" /><input type="hidden" id="cardinalOrderNumber" value="" /><input type="hidden" id="jsExecutionTracker" name="jsExecutionTracker" value="build-date-1789288446811" /><input type="hidden" id="submitSource" name="submitSource" value="unknown" /><input type="hidden" id="submitDate" name="submitDate" value="undefined" /><input type="hidden" id="buildDate" name="buildDate" value="1789288446811" /><input type="hidden" name="uploadServerUrl" value="https://upload.jotform.com/upload" /><input type="hidden" name="eventObserver" value="1" />
   <div role="main" class="form-all">
     <ul class="form-section page-section" role="presentation">
       <li class="form-line form-line-column form-col-1" data-type="control_textbox" id="id_4"><label class="form-label form-label-top" id="label_4" for="input_4"> Name </label>
         <div id="cid_4" class="form-input-wide" data-layout="half"> <input type="text" id="input_4" name="q4_typeA" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" data-component="textbox" aria-labelledby="label_4" value="" /> </div>
       </li>
       <li class="form-line form-line-column form-col-2" data-type="control_email" id="id_5"><label class="form-label form-label-top" id="label_5" for="input_5"> Email </label>
-        <div id="cid_5" class="form-input-wide" data-layout="half"> <span class="form-sub-label-container" style="vertical-align:top"><input type="email" id="input_5" name="q5_email" class="form-textbox validate[Email]" data-defaultvalue="" autoComplete="section-input_5 email" style="width:310px" size="310" data-component="email" aria-labelledby="label_5 sublabel_input_5" value="" /><label class="form-sub-label" for="input_5" id="sublabel_input_5" style="min-height:13px">example@example.com</label></span> </div>
+        <div id="cid_5" class="form-input-wide" data-layout="half"> <input type="email" id="input_5" name="q5_email" class="form-textbox validate[Email]" data-defaultvalue="" autoComplete="section-input_5 email" style="width:310px" size="310" data-component="email" aria-labelledby="label_5" value="" /> </div>
       </li>
       <li class="form-line form-line-column form-col-3" data-type="control_phone" id="id_6"><label class="form-label form-label-top" id="label_6" for="input_6_full"> Phone Number </label>
         <div id="cid_6" class="form-input-wide" data-layout="half"> <span class="form-sub-label-container" style="vertical-align:top"><input type="tel" id="input_6_full" name="q6_phoneNumber[full]" data-type="mask-number" class="mask-phone-number form-textbox validate[Fill Mask]" data-defaultvalue="" autoComplete="section-input_6 tel-national" style="width:310px" data-masked="true" placeholder="(000) 000-0000" data-component="phone" aria-label="Phone Number" aria-labelledby="label_6 input_6_full_label" value="" /></span><span id="input_6_full_label" style="border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;white-space:nowrap">Format: (000) 000-0000.</span> </div>

@@ -95,6 +95,12 @@
 </script>
 
 <style>
+  body {
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
 :root{
   --bg:#05060a;
   --surface:#0b0e17;
@@ -891,6 +897,28 @@ footer{
     });
   }
 })();
+</script>
+  <script>
+  // Disable right-click context menu
+  document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+  });
+
+  // Block common dev tools shortcuts
+  document.addEventListener('keydown', function (e) {
+    // F12
+    if (e.key === 'F12') e.preventDefault();
+
+    // Ctrl+Shift+I / Ctrl+Shift+J / Ctrl+Shift+C (dev tools)
+    if (e.ctrlKey && e.shiftKey && ['I', 'J', 'C'].includes(e.key.toUpperCase())) {
+      e.preventDefault();
+    }
+
+    // Ctrl+U (view source)
+    if (e.ctrlKey && e.key.toUpperCase() === 'U') {
+      e.preventDefault();
+    }
+  });
 </script>
 </body>
 </html>

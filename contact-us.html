@@ -233,22 +233,28 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:600;letter-spacing:-0.02
   .blob{filter:blur(60px);opacity:.22;}
   .orb{display:none;}
 }
-
 /* ============ NAV ============ */
 header{
-  position:fixed;top:0;left:0;right:0;z-index:100;
-  padding:22px 0;transition:background .35s ease, backdrop-filter .35s ease, border-color .35s ease, padding .35s ease;
-  border-bottom:1px solid transparent;
+  position:fixed;top:18px;left:0;right:0;z-index:100;
+  padding:0;transition:top .35s ease;
 }
-header.scrolled{
-  background:rgba(5,6,10,.72);
-  backdrop-filter:blur(16px);
-  -webkit-backdrop-filter:blur(16px);
-  border-color:var(--line);
-  padding:14px 0;
+header .wrap{max-width:1240px;}
+nav{
+  display:flex;align-items:center;justify-content:space-between;
+  background:rgba(9,11,18,.55);
+  border:1px solid rgba(255,255,255,.14);
+  border-radius:100px;
+  padding:10px 10px 10px 30px;
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+  box-shadow:0 10px 34px -14px rgba(0,0,0,.55);
+  transition:background .35s ease, border-color .35s ease, padding .35s ease;
 }
-nav{display:flex;align-items:center;justify-content:space-between;}
-.logo{font-family:var(--font-display);font-weight:700;font-size:20px;letter-spacing:-0.02em;}
+header.scrolled nav{
+  background:rgba(5,6,10,.78);
+  border-color:rgba(255,255,255,.24);
+}
+.logo{font-family:var(--font-display);font-weight:700;font-size:20px;letter-spacing:-0.02em;color: #4f75f9;}
 .logo span{color:var(--cyan);}
 .nav-links{display:flex;gap:36px;align-items:center;}
 .nav-links a{
@@ -271,6 +277,8 @@ nav{display:flex;align-items:center;justify-content:space-between;}
   color:#fff;box-shadow:0 0 0 rgba(139,92,246,0);
 }
 .btn-primary:hover{box-shadow:0 8px 30px -6px rgba(139,92,246,.55);transform:translateY(-2px);}
+.btn-primary svg{width:14px;height:14px;transition:transform .3s var(--ease);}
+.btn-primary:hover svg{transform:translateX(3px);}
 .btn-ghost{
   border:1px solid var(--line);color:var(--ink);background:rgba(255,255,255,.02);
 }
